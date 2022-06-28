@@ -4,7 +4,7 @@ const Header: React.FC = () => {
 
     return (
         <Container>
-            <h1>CEIAV</h1>
+            <h1>RIFA REDMI NOTE 11</h1>
         </Container>
     )
 }

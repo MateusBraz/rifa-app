@@ -6,6 +6,7 @@ import { useCota } from "../../hooks/cotas";
 const numbers = Array.from({ length: 1500 }, (_, i) => i + 1);
 
 interface NumberObject {
+    id?: number;
     cota: number;
     nome?: string;
     telefone?: string;
@@ -23,7 +24,7 @@ const Numbers: React.FC = () => {
             if (cotaFilter !== undefined) {
                 return cotaFilter;
             }
-            return { id: n, cota: n, status: 'LIVRE' }
+            return { cota: n, status: 'LIVRE' }
         }))
     }, [cotas]);
 
@@ -49,7 +50,7 @@ const Numbers: React.FC = () => {
     return (
         <Content>
             <ProgressBar progress={progressNumber}>
-                <p><strong>{progressNumber}%</strong></p>
+                <p><strong>{progressNumber.toFixed(2)}%</strong></p>
                 <div />
             </ProgressBar>
 

@@ -44,8 +44,8 @@ export const Content = styled.div`
 
 export const ProgressBar = styled.div<Props>`
     position: relative;
-    border: 1px solid #afcacc;
-    height: 20px;
+    border: 2px solid #afcacc;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;

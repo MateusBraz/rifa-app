@@ -3,6 +3,7 @@ import { Container } from "./styles"
 import Modal from '../Modal';
 
 export interface Props {
+    id?: number;
     cota: number;
     nome?: string;
     telefone?: string;

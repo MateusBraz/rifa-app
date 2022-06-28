@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { URL_API } from './base';
 
 const api = axios.create({
-	baseURL: 'https://rifa-celular-ceiav-default-rtdb.firebaseio.com/'
+	baseURL: URL_API
 });
 
 const sucess = (res: any) => res;
