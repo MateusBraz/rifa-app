@@ -11,6 +11,7 @@ export const Container = styled.div`
     color: #fff;
     
     h1 {
+        font-size: 1.4rem;
         margin: 0;
     }
 `;
